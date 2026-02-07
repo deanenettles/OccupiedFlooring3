@@ -35,9 +35,9 @@
 
         .topnav a {
         color: white;
-        padding: 14px 16px;
+        padding: .9rem 1rem;
         text-decoration: none;
-        font-size: 17px;
+        font-size: 1.0625rem;
         display: block;
         }
 
@@ -63,19 +63,23 @@
         color: white;
         }
 
-        main {padding-left:16px; max-width:600px; margin:0 auto;}
+        main {padding-left:1rem; max-width:37.5rem; margin:0 auto 6.25rem auto;}
         section {width:100%; display:flex; flex-direction:row; flex-wrap:wrap; justify-content:center;}
-        section div {color:white; background-color:#a30046; width:9rem; margin:.5rem; padding:1.5rem 1rem 1rem 1rem; text-align:center; border-radius:1rem; text-align:center;}
+        section div {color:white; background-color:#a30046; width:9rem; margin:.4rem; padding:1.5rem 1rem 1rem 1rem; text-align:center; border-radius:1rem; text-align:center;}
+        footer {background-color:#777; color:white; padding:1rem;}
 
         /* TYPE */
         h2 {color:#777;}
         h3 {color:#a30046; margin-top:2rem;}
         strong{color:#777; font-weight:700;}
+        footer p {font-size:smaller;}
 
-        section div h4 {font-size:40px; line-height:35px; margin:0; font-weight:600;}
-        section div p {margin:6px;}
+        section div h4, section div p:first-child {font-size:2.5rem; line-height:2.2rem; margin:0; font-weight:600;}
+        section div p {margin:.375rem;}
 
-        img[src="images/OccupiedFlooringLogo2024Rev.png"]{width:200px;}
+        img[src="images/OccupiedFlooringLogo2024Rev.png"]{width:12.5rem;}
+
+        .headImage {height:12rem; width:100%; background-image:url(images/ShutterstockCommercialBuilding.png); background-repeat:no-repeat; background-size:cover; overflow:hidden; outline:1px solid red; background-position:center 25%;}
     </style>
 </head>
 <body>
@@ -85,7 +89,7 @@
 
     <!-- Top Navigation Menu -->
     <div class="topnav">
-        <a href="index.html" class="active"><h1>Occupied Flooring Solutions</h1><img src="images/OccupiedFlooringLogo2024Rev.png" alt="Occupied Flooring Solutions logo">
+        <a href="index.html" class="active"><h1>Occupied Flooring Solutions</h1><img src="images/OccupiedFlooringLogo2024Rev.png" alt="Occupied Flooring Solutions logo"></a>
         <div id="myLinks">
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
@@ -94,17 +98,17 @@
             <a href="programs.html">Programs</a>
             <a href="contact.html">Contact</a>
         </div><!-- end myLinks -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="click for navigation dropdown">
             <i class="fa fa-bars"></i>
         </a>
     </div><!-- end topnav -->
     <div class="headImage">
-        <img src="images/"
+
     </div>
 
     <div class="wrapper">
         <main>
-            <h2>National Flooring Installation, Delivered with Precision&nbsp;Project&nbsp;Management</h2>
+            <h2>National Flooring Installation, Delivered with Precision&nbsp;Project Management</h2>
             <p>Occupied Flooring Solutions (OFS) is a national professional services firm specializing in occupied flooring and interior surface programs. We manage complex flooring projects across the country with a disciplined focus on planning, execution, quality control, and measurable results.</p>
             <p>We operate as an extension of our clients’ facilities, asset management, and real estate teams—delivering predictable outcomes while keeping workplaces fully operational.</p>
             <p>We are not simply installers.</p>
@@ -112,28 +116,31 @@
             <h3>Experience That Scales Nationally</h3>
             <section>
                 <div>
-                    <h4>35+ years</h4>
+                    <p>35+ years</p>
                     <p>of leadership experience</p>
                 </div>
                 <div>
-                    <h4>14 years</h4>
+                    <p>14<br>years</p>
                     <p>delivering occupied flooring programs</p>
                 </div>
                 <div>
-                    <h4>1,230+ projects</h4>
+                    <p>1,230+ projects</p>
                     <p>completed nationwide</p>
                 </div>
                 <div>
-                    <h4>15+ million SF</h4>
+                    <p>&nbsp;15+ million sf</p>
                     <p>installed and managed</p>
                 </div>
                 <div>
-                    <h4>Mill Partner</h4>
+                    <p>Mill Partner</p>
                     <p>Representative of the Year (2024)</p>
                 </div>
             </section>
             <p>For more than two decades, the OFS team has refined a proven methodology for upgrading active office environments with minimal disruption. Our approach emphasizes detailed phasing, transparent reporting, and rigorous quality control—allowing clients to modernize space without shutting down operations.</p>
         </main>
+        <footer>
+            <p>©2026 Occupied Flooring Solutions LLC. All Rights Reserved.</p>
+        </footer>
     </div> <!--end wrapper-->
 
 <!-- End smartphone / tablet look -->
