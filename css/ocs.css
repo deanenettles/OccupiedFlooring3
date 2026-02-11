@@ -1,4 +1,9 @@
          {outline:1px solid red;}
+
+        /* BOX SIZING */
+		html {box-sizing:border-box;}
+		*, *:before, *:after {box-sizing:inherit}
+
       body {
         margin: 0; padding:0;
         font-family: Arial, Helvetica, sans-serif;
@@ -54,12 +59,13 @@
       i {display:block; margin-top:1rem;}
 
       /* TYPE */
-      h2 {color:#777;}
-      h3 {color:#a30046; margin-top:2rem;}
+      h2 {color:#a30046; font-size:16px;}
+      h3 {color:#777; margin-top:2rem; font-size:24px;}
+      h4 {color:#a30046; margin-top:2rem; font-size:18px;}
       strong{color:black; font-weight:700;}
       footer p {font-size:smaller;}
 
-      section div h4, section div p:first-child {font-size:2.3rem; line-height:2.2rem; margin:0; font-weight:600;}
+      section div h5, section div p:first-child {font-size:1.9rem; line-height:2.0rem; margin:0; font-weight:600;}
 
       section div p {margin:.375rem;}
 
@@ -89,3 +95,18 @@
         text-align: left;
       }
     }
+
+    /* FORMS */
+    input, textarea {display:block; width:100%;}
+
+    input, textarea, select, button {margin-bottom:.5rem; border:.06rem solid #aaa; padding:.5rem; border-radius:.25rem;}
+
+    textarea {margin-bottom:1rem;}
+
+    .hilight {font-size:small; color:#a30046; margin-top:0;}
+    
+    button[type=submit] {background-color:#a30046; color:white;}
+
+    button[type=submit]:hover, button[type=submit]:focus, button[type=submit]:active {background-color:#333; color:white;}
+
+    button[type=reset]:hover, button[type=submit]:focus, button[type=submit]:active {background-color:#ccc; }  
