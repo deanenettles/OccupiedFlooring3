@@ -11,10 +11,10 @@
 
 
 /* ORIG NAV */
-/*
- {
+
+.topnav {
   overflow: hidden;
-  background-color: #777;
+  background-color: #333;
 }
 
 .topnav a {
@@ -39,11 +39,11 @@
 
 .topnav .icon {
   display: none;
-} 
-  */
+}
+  
 
       /* MY NAV */
-      .topnav {
+/*      .topnav {
         overflow: hidden;
         background-color: #777;
         display:flex;
@@ -73,7 +73,7 @@
       .topnav .icon {
         display: none;
       } 
-
+*/
       /* STRUCTURE */
 
       main {padding:0 1rem 0 1rem; max-width:37.5rem; margin:0 auto 6.25rem auto;}
@@ -86,11 +86,13 @@
 
       /* NAV TEST */
 
-      #myLinks {display:flex; padding-right:1rem; }
+    #myLinks a:first-child {margin-right:20px;}
+    #myLinks a {padding-top:20px; padding-bottom:20px; }
+    #myLinks a:not(:first-child) {padding-top:40px;}
 
-      .topnav a {display:flex; flex-direction:column;justify-items:center;}
+     /* .topnav a {display:flex; flex-direction:column;justify-items:center;}*/
 
-      i {display:block; margin-top:1rem;}
+      i {display:block;  }
 
       /* TYPE */
       .topnav h1 {display:none;}
@@ -112,15 +114,21 @@
       /* Head image box */
       .headImage {height:12rem; width:100%; background-image:url(../images/ShutterstockCommercialBuilding.png); background-repeat:no-repeat; background-size:cover; overflow:hidden; background-position:center 25%;}
 
-/*@media screen and (max-width: 900px) {
-  #myLinks a {display: none;}
+@media screen and (min-width: 500px) {
+  html {font-size:16px;}
+}
+
+@media screen and (max-width: 800px) {
+  .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
   }
+  #myLinks a:not(:first-child) {padding-top:10px;}
+  #myLinks a:first-child {margin-right:0;}
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -132,8 +140,8 @@
     display: block;
     text-align: left;
   }
-} */
-
+}
+/*
       @media screen and (min-width:500px) {
         html {font-size:16px;}
       }
@@ -160,7 +168,7 @@
         text-align: left;
       }
     } 
-
+*/
     /* FORMS */
     input, textarea {display:block; width:100%;}
 
