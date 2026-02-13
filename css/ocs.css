@@ -1,14 +1,18 @@
          {outline:1px solid red;}
 
         /* BOX SIZING */
-		html {box-sizing:border-box;}
+		html {box-sizing:border-box; font-size:14px}
 		*, *:before, *:after {box-sizing:inherit}
 
-      body {
-        margin: 0; padding:0;
-        font-family: "League Spartan", Arial, Helvetica, sans-serif;
-      }
-/* .topnav {
+    body {
+    margin: 0; padding:0;
+    font-family: "League Spartan", Arial, Helvetica, sans-serif;
+    }
+
+
+/* ORIG NAV */
+/*
+ {
   overflow: hidden;
   background-color: #777;
 }
@@ -35,17 +39,20 @@
 
 .topnav .icon {
   display: none;
-} */
+} 
+  */
+
+      /* MY NAV */
       .topnav {
         overflow: hidden;
         background-color: #777;
         display:flex;
         flex-direction:row;
         justify-content:space-between;
+        
       }
 
       .topnav a {
-
         color: #f2f2f2;
         text-align: center;
         padding: 14px 16px;
@@ -67,9 +74,7 @@
         display: none;
       } 
 
-      /* test */
-
-      .topnav h1 {display:none;}
+      /* STRUCTURE */
 
       main {padding:0 1rem 0 1rem; max-width:37.5rem; margin:0 auto 6.25rem auto;}
 
@@ -79,6 +84,8 @@
 
       footer {background-color:#777; color:white; padding:1rem; position:relative; width:100%; bottom:0;}
 
+      /* NAV TEST */
+
       #myLinks {display:flex; padding-right:1rem; }
 
       .topnav a {display:flex; flex-direction:column;justify-items:center;}
@@ -86,19 +93,23 @@
       i {display:block; margin-top:1rem;}
 
       /* TYPE */
+      .topnav h1 {display:none;}
       h2 {color:#a30046; font-size:16px;}
       h3 {color:#777; margin-top:2.5rem; font-size:24px;}
       h4 {color:#a30046; margin-top:2.5rem; font-size:18px;}
       strong{color:black; font-weight:700;}
       footer p {font-size:smaller;}
        li { margin-bottom:.5rem;}
-
+    
+      /* Maroon boxes */
       section div h5, section div p:first-child {font-size:1.9rem; line-height:2.0rem; margin:0; font-weight:600;}
 
       section div p {margin:.375rem;}
 
+      /* logo */
       img[src="images/OccupiedFlooringLogo2024Rev.png"]{width:12.5rem;}
 
+      /* Head image box */
       .headImage {height:12rem; width:100%; background-image:url(../images/ShutterstockCommercialBuilding.png); background-repeat:no-repeat; background-size:cover; overflow:hidden; background-position:center 25%;}
 
 /*@media screen and (max-width: 900px) {
@@ -123,6 +134,9 @@
   }
 } */
 
+      @media screen and (min-width:500px) {
+        html {font-size:16px;}
+      }
 
     @media screen and (max-width: 900px) {
       .topnav div a {display: none;}
