@@ -15,6 +15,7 @@
   .topnav {
     overflow: hidden;
     background-color: #777;
+    outline:1px solid yellow;
   }
 
   .topnav a {
@@ -26,9 +27,8 @@
     text-decoration: none;
     font-size: 17px;
     height:102px;
+    background-color:transparent;
   }
-
-/* playing with color, hamburger red always */
 
   .topnav a:hover {
     background-color: #ddd;
@@ -73,7 +73,7 @@
   h2 {color:#a30046; font-size:16px;}
   h3 {color:#777; margin-top:2.5rem; font-size:24px;}
   h4 {color:#a30046; margin-top:2.5rem; font-size:18px;}
-  strong{color:black; font-weight:700;}
+  strong {color:black; font-weight:700;}
   footer p {font-size:smaller;}
     li { margin-bottom:.5rem;}
 
@@ -98,18 +98,30 @@
     .topnav a:not(:first-child) {display: none;}
 
     .topnav a {
-      background-color:#333;
+      background-color:transparent;
     }
+
+   /* .topnav a:not(:first-child){
+      margin-bottom:-60px;
+      background-color:black;
+    } */
 
     .topnav a.icon {
       float: right;
       display: block;
+      height:102px;
     }
     /* Move nav other than logo down from top */
     #myLinks a:not(:first-child) {
       padding-top:10px; 
-      height:102px;
+      height:20px;
+      color:white;
+      background-color:black;
     }
+
+    #myLinks a:not(:first-child):hover {color:gray;}
+
+    #myLinks a:last-child {padding-bottom:40px;}
 
   /* Move nav away from logo */
   #myLinks a:first-child {margin-right:0;}
