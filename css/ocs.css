@@ -95,36 +95,33 @@
 
 /* Under 800px width — nav hidden, only hamberger shows */
   @media screen and (max-width: 800px) {
+
+    /* Hides row navigation */
     .topnav a:not(:first-child) {display: none;}
 
-    .topnav a {
-      background-color:transparent;
-    }
-
-   /* .topnav a:not(:first-child){
-      margin-bottom:-60px;
-      background-color:black;
-    } */
-
+    /* Controls icon when nav hidden */
     .topnav a.icon {
       float: right;
       display: block;
       height:102px;
     }
-    /* Move nav other than logo down from top */
+    /* Controls dropdown links */
     #myLinks a:not(:first-child) {
-      padding-top:10px; 
-      height:20px;
+      padding-top:10px;
+      padding-bottom:10px;
+      height:40px;
       color:white;
       background-color:black;
     }
+    /* Controls dropdown hover */
+    #myLinks a:not(:first-child):hover {
+      color:white;
+      background-color:#444;
+    }
 
-    #myLinks a:not(:first-child):hover {color:gray;}
-
+    /* Space between last menu item and bottom of menu */
     #myLinks a:last-child {padding-bottom:40px;}
 
-  /* Move nav away from logo */
-  #myLinks a:first-child {margin-right:0;}
 }
 
 /* Javascript to turn nav on and off */
