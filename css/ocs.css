@@ -10,7 +10,7 @@
   }
 
 
-/* ORIG NAV */
+/* NAV */
   
   .topnav {
     overflow: hidden;
@@ -157,3 +157,9 @@
   button[type=submit]:hover, button[type=submit]:focus, button[type=submit]:active {background-color:#333; color:white;}
 
   button[type=reset]:hover, button[type=submit]:focus, button[type=submit]:active {background-color:#ccc; }  
+
+  /* LINKS */
+
+p.connect {line-height:1.5;}
+.connect a:link, .connect a:visited {font-weight:700; text-decoration:none; color:maroon;}
+.connect a:hover, .connect a:focus, .connect a:active {color:dodgerblue;}
