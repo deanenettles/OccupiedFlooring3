@@ -54,7 +54,7 @@
 
   section {width:100%; display:flex; flex-direction:row; flex-wrap:wrap; justify-content:center; }
 
-  section div {color:white; background-color:#a30046; width:12rem; margin:.4rem; padding:1.5rem 1rem 1rem 1rem; text-align:center; border-radius:1rem; text-align:center; }
+  section div {color:white; background-color:#a30046; width:12rem; margin:0.4rem 0; padding:1.5rem 1rem 1rem 1rem; text-align:center; border-radius:1rem; text-align:center; }
 
   footer {background-color:#777; color:white; padding:1rem; position:relative; width:100%; bottom:0;}
 
@@ -72,7 +72,7 @@
   .topnav h1 {display:none;}
   h2 {color:#a30046; font-size:1rem;}
   h3 {color:#777; margin-top:2.5rem; font-size:1.5rem;}
-  h4 {color:#a30046; margin-top:2.5rem; font-size:1.25rem;}
+  h4 {color:#a30046; margin:2.5rem 0 1rem 0; font-size:1.25rem;}
   h5 {font-size:1rem; margin:.5rem 0;}
   strong {color:black; font-weight:600;}
   footer p {font-size:smaller;}
