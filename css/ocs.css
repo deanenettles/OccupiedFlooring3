@@ -54,7 +54,7 @@
 
   section {width:100%; display:flex; flex-direction:row; flex-wrap:wrap; justify-content:center; }
 
-  section div {color:white; background-color:#a30046; width:12rem; margin:0.4rem 0; padding:1.5rem 1rem 1rem 1rem; text-align:center; border-radius:1rem; text-align:center; }
+  section div {color:white; background-color:oklch(0.459 0.184 6.94); width:12rem; margin:0.4rem 0; padding:1.5rem 1rem 1rem 1rem; text-align:center; border-radius:1rem; text-align:center; }
 
   footer {background-color:#777; color:white; padding:1rem; position:relative; width:100%; bottom:0;}
 
@@ -70,9 +70,9 @@
 
 /* TYPE */
   .topnav h1 {display:none;}
-  h2 {color:#a30046; font-size:1rem;}
+  h2 {color:oklch(0.459 0.184 6.94); font-size:1rem;}
   h3 {color:#777; margin-top:2.5rem; font-size:1.5rem;}
-  h4 {color:#a30046; margin:2.5rem 0 1rem 0; font-size:1.25rem;}
+  h4 {color:oklch(0.459 0.184 6.94); margin:2.5rem 0 1rem 0; font-size:1.25rem;}
   h5 {font-size:1rem; margin:.5rem 0;}
   strong {color:black; font-weight:600;}
   footer p {font-size:smaller;}
@@ -150,9 +150,9 @@
 
   textarea {margin-bottom:1rem;}
 
-  .hilight {font-size:small; color:#a30046; margin-top:0;}
+  .hilight {font-size:small; color:oklch(0.459 0.184 6.94); margin-top:0;}
 
-  button[type=submit] {background-color:#a30046; color:white;}
+  button[type=submit] {background-color:oklch(0.459 0.184 6.94); color:white;}
 
   button[type=submit]:hover, button[type=submit]:focus, button[type=submit]:active {background-color:#333; color:white;}
 
@@ -161,5 +161,16 @@
   /* LINKS */
 
 p.connect {line-height:1.5;}
-.connect a:link, .connect a:visited {font-weight:700; text-decoration:none; color:maroon;}
-.connect a:hover, .connect a:focus, .connect a:active {color:dodgerblue;}
+.connect a:link, .connect a:visited {font-weight:700; text-decoration:none; color:oklch(0.459 0.184 6.94);}
+.connect a:hover, .connect a:focus, .connect a:active {color:oklch(0.5237 0.184 253.59);}
+
+/* PROCESS PAGE */
+.process h4 {color:white; margin-top:0; margin-bottom:1rem;}
+.process h5 {padding-bottom:1rem;}
+.process h6 {font-size:1.25rem; margin:1rem 0 0 0;}
+.process div p {font-size:.5rem;}
+.process div {width:100%; padding:2rem;}
+.process div p {font-size:1rem;}
+.process ul {text-align:left; padding-left:3rem;}
+
+.phase {background-color:#ddd; color:black; margin:1rem 0; padding:.8rem 1rem 1rem 1rem; width:100%;}
